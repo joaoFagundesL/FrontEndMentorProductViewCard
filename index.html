@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <title>Product preview card</title>
+</head>
+<body>
+    
+    <main class="flex jf-center ai-center bg-cream">
+        <div class="container | grid even-column bg-white">
+            <picture class="logo-container">
+                <source class="logo" srcset="images/image-product-mobile.jpg" media="(max-width: 600px)">
+                <img class="logo" src="/images/image-product-desktop.jpg" alt="">
+            </picture>
+            <div class="card | flex flex-column">
+                <p class=" fs-100 gray fw-semi-bold ff-second uppercase lp-100">Perfume</p>
+                <h2 class="fw-700 fs-400 lh-200 ff-third fw-bold">Gabrielle Essence Eau De Parfum</h2>
+                <p class="gray fs-200 lh-100 ff-second">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+
+                <div class="flex ai-center gap-100">
+                    <p class="dark-cyan fs-400 ff-third">$149.99</p>
+                    <p class="fs-150 gray ff-second risked">$169.99</p>
+                </div>
+
+                <div class="card-button | gap-100 flex jf-center ai-center bg-dark-cyan">
+                    <img src="/images/icon-cart.svg" alt="">
+                    <p class="fw-bold ff-second fs-200 white">Add to cart</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

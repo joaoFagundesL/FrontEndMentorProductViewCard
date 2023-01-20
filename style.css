@@ -1,0 +1,260 @@
+/* Global */
+:root {
+    --fs-100: 0.75rem;
+    --fs-150: 0.8125rem;
+    --fs-200: 0.875rem;
+    --fs-300: 1rem;
+    --fs-400: 2rem;
+
+    --lh-100: 1.4375rem;
+    --lh-200: 2rem;
+
+    --gap-100: 1.3rem;
+
+    --lp-100: 5px;
+    
+    --white-color: hsl(0, 0%, 100%);
+    --dark-blue: hsl(212, 21%, 14%);
+    --grayish-blue: hsl(30, 38%, 92%);
+    --cream: hsl(30, 38%, 92%);
+    --dark-cyan: hsl(158, 36%, 37%);
+    --dark-green: hsl(158, 36%, 20%);
+    --gray: #6C7289;
+    
+    --fw-bold: 700;
+    --fw-semi-bold: 500;
+
+    --ff-first: 'Inter', sans-serif;
+    --ff-second: 'Montserrat', sans-serif;
+    --ff-third: 'Fraunces', serif;
+}
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Utility classes */
+
+.fs-100 {
+    font-size: var(--fs-100);
+}
+
+.fs-150 {
+    font-size: var(--fs-150);
+}
+
+.fs-200 {
+    font-size: var(--fs-200);
+}
+
+.fs-300 {
+    font-size: var(--fs-300);
+}
+
+.fs-400 {
+    font-size: var(--fs-400);
+}
+
+.bg-cream {
+    background-color: var(--cream);
+}
+
+.bg-dark-cyan {
+    background-color: var(--dark-cyan);
+}
+
+.gray {
+    color: var(--gray);
+}
+
+.dark-cyan {
+    color: var(--dark-cyan);
+}
+
+.white {
+    color: var(--white-color);
+}
+
+.bg-white {
+    background-color: var(--white-color);
+}
+
+.fw-bold {
+    font-weight: var(--fw-bold);
+}
+
+.fw-semi-bold {
+    font-weight: var(--fw-semi-bold);
+}
+
+.lh-100 {
+    line-height: var(--lh-100);
+}
+
+.lh-200 {
+    line-height: var(--lh-200);
+}
+
+.ff-first {
+    font-family: var(--ff-first);
+}
+
+.ff-second {
+    font-family: var(--ff-second);
+}
+
+.ff-third {
+    font-family: var(--ff-third);
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.lp-100 {
+    letter-spacing: 5px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.risked {
+    text-decoration: line-through;
+}
+
+.jf-center {
+    justify-content: center;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.gap-100 {
+    gap: var(--gap-100);
+}
+
+/* Styling */
+
+main {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    max-width: 600px;
+    border-radius: .5rem;
+    margin: 1rem;
+}
+
+.card {
+    gap: var(--gap-100);
+    padding: 2rem;
+}
+
+.card-button {
+    padding: 0.75em 1em;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.even-column {
+    grid-template-columns: 1fr 1fr;
+}
+
+.card-button:hover {
+    background-color: var(--dark-green);
+}
+
+.logo {
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+
+@media screen and (max-width: 600px) {
+    .even-column {
+        grid-template-columns: 1fr;
+    }
+}
